@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ediciones Gamma - Estrategia Unidades de Negocio H2 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .gradient-brand { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+</head>
+<body class="text-slate-800 antialiased">
+
+    <header class="gradient-brand text-white py-12 px-6 shadow-xl relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80')] opacity-10 bg-cover bg-center"></div>
+        <div class="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div>
+                <span class="bg-blue-500/20 text-blue-300 border border-blue-500/30 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">Estrategia Unidades de Negocio</span>
+                <h1 class="text-4xl font-bold tracking-tight mt-3 text-white">Ediciones Gamma — Growth Marketing</h1>
+                <p class="text-slate-300 mt-2 text-lg">North Stars y plan de acción por unidad de negocio. <span class="text-blue-400 font-semibold">Horizonte: Julio a Diciembre 2026</span></p>
+            </div>
+            <div class="bg-slate-800/80 backdrop-blur border border-slate-700 p-4 rounded-xl text-right">
+                <p class="text-sm text-slate-400 font-medium">Responsable del Vault</p>
+                <p class="text-base font-semibold text-white">Carolina Ramirez V.</p>
+                <p class="text-xs text-blue-400">Head of Growth | Junio 2026</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 flex overflow-x-auto space-x-8">
+            <button onclick="switchTab('revistas')" id="tab-revistas" class="tab-btn border-b-2 border-blue-600 text-blue-600 py-4 px-1 font-semibold text-sm transition-all whitespace-nowrap">
+                01. Revistas (AXXIS / Diners)
+            </button>
+            <button onclick="switchTab('alianzas')" id="tab-alianzas" class="tab-btn border-b-2 border-transparent text-slate-500 hover:text-slate-700 py-4 px-1 font-medium text-sm transition-all whitespace-nowrap">
+                02. Alianzas (Vive Beneficios)
+            </button>
+            <button onclick="switchTab('libros')" id="tab-libros" class="tab-btn border-b-2 border-transparent text-slate-500 hover:text-slate-700 py-4 px-1 font-medium text-sm transition-all whitespace-nowrap">
+                03. Libros (Directo & B2B)
+            </button>
+            <button onclick="switchTab('ecosistema')" id="tab-ecosistema" class="tab-btn border-b-2 border-transparent text-slate-500 hover:text-slate-700 py-4 px-1 font-medium text-sm transition-all whitespace-nowrap">
+                Ecosistema Critico (Unidades Bus)
+            </button>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+        <section id="content-revistas" class="tab-content active space-y-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex justify-between items-center">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">AXXIS</h3>
+                        <p class="text-sm text-slate-500">Arquitectura, diseño e interiorismo</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-2xl font-black text-emerald-600">66-76%</span>
+                        <p class="text-xs text-slate-400 font-medium uppercase tracking-wider">Meta Comercial</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex justify-between items-center">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">DINERS</h3>
+                        <p class="text-sm text-slate-500">Lifestyle, gastronomía, moda, viajes, arte</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-2xl font-black text-blue-600">37%</span>
+                        <p class="text-xs text-slate-400 font-medium uppercase tracking-wider">Meta Digital</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
+                <h4 class="font-bold text-amber-900 text-sm uppercase tracking-wider">Contexto Crítico H2 2026</h4>
+                <ul class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-2 text-xs text-amber-800">
+                    <li>⚠️ <strong>Privilegios Davivienda:</strong> Cierra jun 2026. Brecha activa que AXXIS y Diners deben mitigar.</li>
+                    <li>🔄 <strong>HubSpot CRM:</strong> Columna vertebral obligatoria para journeys de suscriptores y pipeline de pauta.</li>
+                    <li>📜 <strong>CoCrea:</strong> Vigente hasta sep 2026. Circulación mínima requerida como argumento clave B2B.</li>
+                    <li>🤖 <strong>Chatbots:</strong> Transición progresiva de Fase 1 (ManyChat) a Fase 2 (WhatsApp Business).</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">🎯 Métrica North Stars — Revistas</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-5 border border-slate-200 rounded-xl shadow-sm">
+                        <div class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">North Star 1</div>
+                        <h4 class="font-bold text-slate-800 text-base mb-3">Pauta B2B Eficiente</h4>
+                        <ul class="text-sm text-slate-600 space-y-1.5 list-disc list-inside">
+                            <li>% anunciantes recurrentes</li>
+                            <li>Nuevos anunciantes / mes</li>
+                            <li>Incentivo a pauta digital activa</li>
+                            <li>Duración promedio de contrato</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-5 border border-slate-200 rounded-xl shadow-sm">
+                        <div class="text-xs font-bold text-purple-600 uppercase tracking-wider mb-2">North Star 2</div>
+                        <h4 class="font-bold text-slate-800 text-base mb-3">Suscripciones Saludables</h4>
+                        <ul class="text-sm text-slate-600 space-y-1.5 list-disc list-inside">
+                            <li>Planes / Promociones / Formatos</li>
+                            <li>Netos nuevos / mes</li>
+                            <li>Migración completa a Hubspot</li>
+                            <li>Churn rate mensual & LTV promedio</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-5 border border-slate-200 rounded-xl shadow-sm">
+                        <div class="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-2">North Star 3</div>
+                        <h4 class="font-bold text-slate-800 text-base mb-3">Relevancia Digital</h4>
+                        <ul class="text-sm text-slate-600 space-y-1.5 list-disc list-inside">
+                            <li>Posicionamiento de keywords core</li>
+                            <li>Estrategia de ejes de comunicación</li>
+                            <li>Engagement e índice de conversión</li>
+                            <li>Nuevos formatos multimedia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">🛠️ Pilares de Ejecución Táctica</h3>
+                
+                <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <div class="bg-slate-900 text-white px-6 py-3 font-semibold text-sm">PILAR 1 — PAUTA B2B (Recurrentes + Nuevos + Canal Directo)</div>
+                    <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                        <div class="space-y-2">
+                            <p><strong>• Reactivación de Cuentas Dormidas:</strong> Mapeo exhaustivo de anunciantes inactivos con propuestas personalizadas por categoría (materiales, mobiliario, acabados, iluminación).</p>
+                            <p><strong>• Media Kit Renovado:</strong> Nuevos paquetes combo (Print + Digital + Redes + Podcast), tarifas digitales claras y métricas de audiencia actualizadas.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <p><strong>• Nuevas Categorías Target:</strong> Domótica, tecnología para el hogar inteligente, construcción sostenible, energía solar y real estate premium.</p>
+                            <p><strong>• Paquetes de Patrocinio Tiers:</strong> Visibilidad escalada por alcance que incluye menciones en el nuevo podcast y activaciones directas en <em>Connect & Collab</em>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <div class="bg-blue-900 text-white px-6 py-3 font-semibold text-sm">PILAR 2 — SUSCRIPTORES (Optimización e Infraestructura)</div>
+                    <div class="p-6 text-sm space-y-4">
+                        <div class="bg-red-50 text-red-900 p-3 rounded-lg border border-red-200 text-xs font-medium">
+                            🚨 PRIORIDAD INMEDIATA: Corregir los 4 problemas críticos de conversión de la landing de suscripción (propuesta de valor clara, precios coherentes, eliminación de precio fantasma) ANTES de encender pauta.
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="p-4 bg-slate-50 rounded-xl">
+                                <h5 class="font-bold text-slate-800 mb-1">Bundle Híbrido</h5>
+                                <p class="text-xs text-slate-600">Upgrade digital + impresa con precio intermedio. Reduce el churn de la edición física ofreciendo valor dual continuo.</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-xl">
+                                <h5 class="font-bold text-slate-800 mb-1">Lead Magnets</h5>
+                                <p class="text-xs text-slate-600">Directorio AXXIS de estudios y arquitectos. Captura orgánica → Nurture en HubSpot → Oferta de suscripción.</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-xl">
+                                <h5 class="font-bold text-slate-800 mb-1">Newsletter Curado</h5>
+                                <p class="text-xs text-slate-600">Frecuencia semanal con el best-of editorial y tendencias, optimizado mediante IA (Gemini Pro) para briefs y copies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <div class="bg-emerald-900 text-white px-6 py-3 font-semibold text-sm">PILAR 3 — RELEVANCIA DIGITAL & FORMATOS 2026</div>
+                    <div class="p-6 space-y-6 text-sm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-bold text-slate-900 mb-2">🎙️ Podcast AXXIS: "Proyectos que hablan"</h4>
+                                <p class="text-xs text-slate-600">Conversaciones con arquitectos y diseñadores referentes del sector. Periodicidad de 1 episodio al mes en YouTube y Spotify. Los invitados estratégicos actúan como anunciantes potenciales de la marca.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 mb-2">🤝 Connect & Collab: Conversatorios de Marca</h4>
+                                <p class="text-xs text-slate-600">Formato presencial + streaming enfocado en el reconocimiento de empresas del sector. Diseñado como plataforma de monetización B2B mediante patrocinios directos y venta de entradas.</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-slate-100 pt-4">
+                            <h4 class="font-bold text-slate-900 mb-3">📹 Series de Contenido Permanente (Cápsulas de Video)</h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                                <div class="bg-slate-50 p-3 rounded-lg"><span class="block text-xs font-bold text-blue-600">Material del mes</span><p class="text-xs text-slate-600 mt-1">60 seg • Tendencias en materiales. Mix editorial + B2B.</p></div>
+                                <div class="bg-slate-50 p-3 rounded-lg"><span class="block text-xs font-bold text-blue-600">Proyecto detrás de cámara</span><p class="text-xs text-slate-600 mt-1">90 seg • El proceso íntimo del estudio. Genera comunidad.</p></div>
+                                <div class="bg-slate-50 p-3 rounded-lg"><span class="block text-xs font-bold text-blue-600">Tendencia de la semana</span><p class="text-xs text-slate-600 mt-1">60 seg • Arquitectura global analizada bajo la lente de AXXIS.</p></div>
+                                <div class="bg-slate-50 p-3 rounded-lg"><span class="block text-xs font-bold text-blue-600">¿Cómo se hace?</span><p class="text-xs text-slate-600 mt-1">90 seg • Enfoque educativo y dinámico con alta viralidad orgánica.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                <div class="p-6 border-b border-slate-200"><h3 class="font-bold text-slate-900">🗓️ Matriz de Distribución en Redes Sociales</h3></div>
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-slate-50 text-slate-600 text-xs font-semibold uppercase">
+                        <tr>
+                            <th class="p-4">Red Social</th>
+                            <th class="p-4">Eje Principal e Innovación de Formato</th>
+                            <th class="p-4">Frecuencia</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-slate-700">
+                        <tr>
+                            <td class="p-4 font-semibold">Instagram</td>
+                            <td class="p-4">Estética + Proceso: Reels animados vía Higgsfield, carruseles de antes/después y cápsulas de materiales.</td>
+                            <td class="p-4 font-medium text-blue-600">5x / semana</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold">TikTok</td>
+                            <td class="p-4">Educación + Tendencias: Formato "¿Cómo se hace?", listas de materiales clave y duetos nativos con arquitectos.</td>
+                            <td class="p-4 font-medium text-blue-600">3x / semana</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold">LinkedIn</td>
+                            <td class="p-4">Industria B2B: Datos de valor de audiencia para anunciantes, insights corporativos y empuje a Connect & Collab.</td>
+                            <td class="p-4 font-medium text-blue-600">2x / semana</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold">Pinterest</td>
+                            <td class="p-4">Inspiración Evergreen: Mood boards y tableros organizados por materiales, paletas de color y proyectos.</td>
+                            <td class="p-4 font-medium text-blue-600">3x / semana</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold">YouTube</td>
+                            <td class="p-4">Profundidad Editorial: Distribución completa de videopodcast, streamings de eventos y project tours guiados.</td>
+                            <td class="p-4 font-medium text-blue-600">1x / semana</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <section id="content-alianzas" class="tab-content space-y-10">
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row justify-between gap-6 items-start md:items-center">
+                <div>
+                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Modelo Estratégico</span>
+                    <h2 class="text-2xl font-bold text-slate-900 mt-1">Club de Alianzas — Vive Beneficios</h2>
+                    <p class="text-sm text-slate-500 mt-1">Estrategia de fidelización basada 100% en el modelo de Canje Corporativo.</p>
+                </div>
+                <div class="bg-indigo-50 border border-indigo-100 p-3 rounded-xl text-xs text-indigo-800">
+                    <strong>Responsable de Unidad:</strong> Paola Pantaleón <br>
+                    <strong>Regla de Oro:</strong> Cero flujo de dinero. Intercambio puro de valor.
+                </div>
+            </div>
+
+            <div class="bg-slate-900 text-white p-6 rounded-xl grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="text-amber-400 font-bold text-sm uppercase tracking-wider mb-2">★ Definición Crítica de Plataforma</h4>
+                    <p class="text-sm text-slate-300">Se aprueba el enfoque de unificación de marcas: <strong class="text-white">AXXIS + Diners Combinado</strong>. Esta integración entrega una mayor base de datos de cara a los aliados corporativos, maximiza el poder de negociación de Gamma y centraliza los desarrollos en una única plataforma tecnológica robusta.</p>
+                </div>
+                <div class="border-l border-slate-700 pl-0 md:pl-6 space-y-2 text-xs text-slate-300">
+                    <p>📦 <strong>Esquema Onboarding:</strong> Flujo simplificado y documentado antes de escalar internacionalmente.</p>
+                    <p>🎯 <strong>Descuentos Permitidos:</strong> Rango mandatorio del 25% mínimo al 40% máximo por beneficio aliado.</p>
+                    <p>📍 <strong>Alcance Geográfico:</strong> Presencia obligatoria desde el MVP en Bogotá, Medellín, Cali y Barranquilla.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-5 border border-slate-200 rounded-xl shadow-sm">
+                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">North Star 1</span>
+                    <h4 class="font-bold text-slate-800 text-base mt-1 mb-3">Plan de Afiliación & Cobertura</h4>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li>Activación ágil de aliados provenientes de la antigua base de Privilegios.</li>
+                        <li>Mantenimiento de un mínimo de 4+ ciudades principales activas de forma simultánea.</li>
+                        <li>Tasa de renovación anual de contratos de aliados por encima del estándar de mercado.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-5 border border-slate-200 rounded-xl shadow-sm">
+                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">North Star 2</span>
+                    <h4 class="font-bold text-slate-800 text-base mt-1 mb-3">Plataforma de Validación & Engagement</h4>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li>% de suscriptores únicos activos que utilizan el Club al menos 1 vez al mes.</li>
+                        <li>Mapeo de usos totales registrados en pasarela por mes.</li>
+                        <li>Métrica tractora: Ahorro total generado medido en COP acumulados.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                <h3 class="font-bold text-slate-900 text-lg mb-4">🔄 Flujo de Redención en el Punto de Venta (Fase 1 MVP)</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
+                    <div class="p-4 bg-slate-50 border-l-4 border-indigo-500 rounded-r-lg"><span class="font-bold block text-slate-800 mb-1">Paso 1: Solicitud</span>El suscriptor llega al comercio aliado, se identifica y solicita el descuento de Vive Beneficios.</div>
+                    <div class="p-4 bg-slate-50 border-l-4 border-indigo-500 rounded-r-lg"><span class="font-bold block text-slate-800 mb-1">Paso 2: Validación</span>El cajero/aliado abre la URL directa personalizada o escanea el código QR exclusivo de su tienda.</div>
+                    <div class="p-4 bg-slate-50 border-l-4 border-indigo-500 rounded-r-lg"><span class="font-bold block text-slate-800 mb-1">Paso 3: Identificación</span>El suscriptor dicta verbalmente su cédula de ciudadanía y el aliado la ingresa en el validador web.</div>
+                    <div class="p-4 bg-slate-50 border-l-4 border-indigo-500 rounded-r-lg"><span class="font-bold block text-slate-800 mb-1">Paso 4: Respuesta</span>El sistema responde en tiempo real: <span class="text-emerald-600 font-bold">ACTIVO</span> (otorga), INACTIVO o NO EXISTE.</div>
+                    <div class="p-4 bg-slate-50 border-l-4 border-indigo-500 rounded-r-lg"><span class="font-bold block text-slate-800 mb-1">Paso 5: Aplicación</span>El comercio aplica el descuento estipulado en el acuerdo físico sin ver datos sensibles del usuario.</div>
+                    <div class="p-4 bg-slate-50 border-l-4 border-indigo-500 rounded-r-lg"><span class="font-bold block text-slate-800 mb-1">Paso 6: Registro</span>La plataforma guarda de forma automática la fecha, la hora y el ID del aliado para analítica interna.</div>
+                </div>
+                <div class="mt-4 bg-slate-100 p-3 rounded-lg text-xs text-slate-500 text-center font-medium">
+                    🛑 Limitación Técnica Fase 1: Este MVP no captura el valor monetario de la transacción ni el ahorro neto en COP. Se requiere migración prioritaria a Fase 2 (API HubSpot plug & play).
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                <div class="p-6 border-b border-slate-200">
+                    <h3 class="font-bold text-slate-900">🎯 Segmentación de Categorías y Target Nacional</h3>
+                    <p class="text-xs text-slate-500 mt-1">Eje central de comunicación: "Cuánto ahorraste este mes" como métrica dura de retención de suscripción.</p>
+                </div>
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-slate-50 text-slate-600 text-xs font-semibold uppercase">
+                        <tr>
+                            <th class="p-4">Categoría Core</th>
+                            <th class="p-4">Tipo de Beneficio Autorizado</th>
+                            <th class="p-4">Target 25-34</th>
+                            <th class="p-4">Target 35-55</th>
+                            <th class="p-4">Ciudades Activas</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-slate-700 text-xs">
+                        <tr>
+                            <td class="p-4 font-bold">Gastronomía</td>
+                            <td class="p-4">% Descuento directo, 2x1 en brunch seleccionados o copa de bienvenida.</td>
+                            <td class="p-4 text-emerald-600 font-bold">Primario</td>
+                            <td class="p-4 text-emerald-600 font-bold">Primario</td>
+                            <td class="p-4 font-medium">BOG • MDE • CLO • BAQ</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">Cultura</td>
+                            <td class="p-4">Entradas preferenciales con descuento y accesos exclusivos a curadurías.</td>
+                            <td class="p-4 text-emerald-600 font-bold">Primario</td>
+                            <td class="p-4 text-emerald-600 font-bold">Primario</td>
+                            <td class="p-4 font-medium">BOG • MDE • CLO</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">Eventos y Conciertos</td>
+                            <td class="p-4">Preventas de carácter exclusivo, % de descuento en taquilla o acceso VIP.</td>
+                            <td class="p-4 text-emerald-600 font-bold">Primario</td>
+                            <td class="p-4 text-slate-400">Secundario</td>
+                            <td class="p-4 font-medium">BOG • MDE • CLO • BAQ</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">Viajes y Hoteles</td>
+                            <td class="p-4">% Descuento en estadías, upgrades automáticos de habitación o early check-in.</td>
+                            <td class="p-4 text-slate-400">Secundario</td>
+                            <td class="p-4 text-emerald-600 font-bold">Primario</td>
+                            <td class="p-4 font-medium">Nacional + Hoteles Boutique</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">Bienestar / Wellness</td>
+                            <td class="p-4">% Descuento en spas premium, pases a gimnasios y planes nutricionales.</td>
+                            <td class="p-4 text-emerald-600 font-bold">Primario</td>
+                            <td class="p-4 text-emerald-600 font-bold">Primario</td>
+                            <td class="p-4 font-medium">BOG • MDE • CLO • BAQ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <section id="content-libros" class="tab-content space-y-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">North Star 1</span>
+                    <h3 class="text-lg font-bold text-slate-900 mt-1 mb-3">Ventas Canal Directo (29 Títulos Core)</h3>
+                    <div class="grid grid-cols-2 gap-4 text-xs">
+                        <div class="bg-slate-50 p-3 rounded-lg"><strong>Monitoreo de Canales:</strong> Unidades vendidas en directo vs B2B vs Intermediarios.</div>
+                        <div class="bg-slate-50 p-3 rounded-lg"><strong>E-commerce CR:</strong> Tasa de conversión de la tienda en línea oficial.</div>
+                        <div class="bg-slate-50 p-3 rounded-lg" class="col-span-2"><strong>Volumen Corporativo:</strong> Cierre de pedidos de empresas por paquetes agregados.</div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">North Star 2</span>
+                    <h3 class="text-lg font-bold text-slate-900 mt-1 mb-3">Libros por Encargo (Grandes Cuentas)</h3>
+                    <div class="grid grid-cols-2 gap-4 text-xs">
+                        <div class="bg-slate-50 p-3 rounded-lg"><strong>Proyectos / Trimestre:</strong> Número de cierres efectivos firmados en el pipeline.</div>
+                        <div class="bg-slate-50 p-3 rounded-lg"><strong>Revenue:</strong> Facturación total acumulada por contratos de encargo.</div>
+                        <div class="bg-slate-50 p-3 rounded-lg"><strong>Prospectos HTAC:</strong> Mapeo de cuentas cualificadas activas en pipeline.</div>
+                        <div class="bg-slate-50 p-3 rounded-lg"><strong>Ciclo de Cierre:</strong> Tiempo promedio desde el contacto inicial hasta el pago.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 border border-slate-200 rounded-xl shadow-sm space-y-4">
+                    <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider border-b border-slate-100 pb-2 text-blue-600">🛒 Venta Directa (Canal Propio)</h4>
+                    <ul class="text-xs text-slate-600 space-y-3">
+                        <li><strong>• E-commerce Mejorado:</strong> SEO enfocado en títulos individuales, categorías y autores. Pasarela activa y opción premium de empaque de regalo para todo Colombia.</li>
+                        <li><strong>• Canales Sociales Directos:</strong> Instagram Shop con tags en Reels/Stories y catálogo completo con pasarela en WhatsApp Business para cierre veloz.</li>
+                        <li><strong>• Newsletter Fidelizado:</strong> Espacio fijo "Libro Destacado" dirigido a audiencias exclusivas ABC1 con beneficios de pre-venta y descuentos del 10% al 15%.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 border border-slate-200 rounded-xl shadow-sm space-y-4">
+                    <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider border-b border-slate-100 pb-2 text-purple-600">💼 Paquetes Corporativos (Sin Consignación)</h4>
+                    <div class="space-y-3 text-xs">
+                        <div class="p-2.5 bg-slate-50 rounded border border-slate-100">
+                            <span class="font-bold block text-slate-800">BÁSICO (50 Unidades)</span>
+                            10% de descuento en la misma referencia comercial + envío gratis a nivel nacional.
+                        </div>
+                        <div class="p-2.5 bg-slate-50 rounded border border-slate-100">
+                            <span class="font-bold block text-slate-800">PREMIUM (100 Unidades)</span>
+                            25% de descuento en la misma referencia, entregas coordinadas y empaque personalizado con tarjeta.
+                        </div>
+                        <div class="p-2.5 bg-slate-50 rounded border border-slate-100">
+                            <span class="font-bold block text-slate-800">ÉLITE (200+ Unidades)</span>
+                            40% de descuento directo, opción de mix libre de títulos y entrega oficial en eventos corporativos.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 border border-slate-200 rounded-xl shadow-sm space-y-4">
+                    <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider border-b border-slate-100 pb-2 text-emerald-600">🎁 Libros por Encargo (Financiación Total)</h4>
+                    <div class="space-y-3 text-xs">
+                        <div class="p-3 bg-emerald-50 text-emerald-900 rounded-lg">
+                            <strong>Paquete Legado ($80M - $120M COP):</strong> 300-500 ejemplares, tapa dura, investigación editorial profunda, 200 páginas, ISBN y pauta digital incluida.
+                        </div>
+                        <div class="p-3 bg-blue-50 text-blue-900 rounded-lg">
+                            <strong>Paquete Centenario ($150M - $250M COP):</strong> 1000-2000 ejemplares, 300+ páginas, sesión de fotos en locación, ebook y entrega de gala.
+                        </div>
+                        <div class="p-2 bg-slate-900 text-white rounded text-center font-bold tracking-wide">
+                            Estrategia Comercial: Caza de Aniversarios Corporativos (2026)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                <h3 class="font-bold text-slate-900 text-base mb-3">📋 Matriz de Priorización Comercial — Scoring HTAC</h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+                    <div class="p-3 bg-slate-50 rounded-lg">
+                        <span class="font-bold block text-slate-800 text-sm">H (Hito Comercial)</span>
+                        <strong>5 ptos:</strong> 50/75/100 años corporativos.<br><strong>3 ptos:</strong> 25/30/40 años.<br><strong>1 pto:</strong> Otros años de fundación.
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-lg">
+                        <span class="font-bold block text-slate-800 text-sm">T (Tamaño Empresa)</span>
+                        <strong>5 ptos:</strong> Empresa Grande ($5.000M+ COP).<br><strong>3 ptos:</strong> Mediana empresa.<br><strong>1 pto:</strong> Pequeña empresa.
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-lg">
+                        <span class="font-bold block text-slate-800 text-sm">C (Cultura Interna)</span>
+                        <strong>5 ptos:</strong> Alto valor de historia e identidad.<br><strong>3 ptos:</strong> Nivel de interés medio.<br><strong>1 pto:</strong> Ninguna cultura editorial.
+                    </div>
+                    <div class="p-3 bg-blue-950 text-white rounded-xl flex flex-col justify-center px-4">
+                        <span class="font-bold text-amber-400 text-sm">Prospectos Clase A</span>
+                        <p class="text-[11px] text-slate-300 mt-1">Suma total entre 17 y 20 puntos exige contacto comercial inmediato y carga automática en HubSpot CRM.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="content-ecosistema" class="tab-content space-y-10">
+            <div>
+                <h3 class="text-lg font-bold text-slate-900 mb-4">📦 Distribución de Cajas de Unidades de Negocio (Core Corregido)</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 text-center">
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl font-semibold text-xs shadow-sm">Revistas (Axxis/Diners)</div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl font-semibold text-xs shadow-sm">Vive Beneficios</div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl font-semibold text-xs shadow-sm">Libros</div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl font-semibold text-xs shadow-sm">Visión</div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl font-semibold text-xs shadow-sm">Plataformas</div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl font-semibold text-xs shadow-sm">Experiencias</div>
+                    <div class="p-4 bg-slate-900 text-white rounded-xl font-bold text-xs shadow-sm">Ediciones Gamma</div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                    <h4 class="font-bold text-slate-900 mb-3 text-base border-b border-slate-100 pb-2">🔄 Automatizaciones Automatizadas HubSpot</h4>
+                    <ul class="space-y-2 text-xs text-slate-600">
+                        <li><strong>J1 • Suscriptor Nuevo:</strong> Lead → Nurture secuencial de 4 correos de valor → Oferta → Suscripción activa → Welcome pack.</li>
+                        <li><strong>J2 • Renovación Anticipada:</strong> Alerta automática a los -45 días de vencimiento → Recordatorios escalonados optimizados.</li>
+                        <li><strong>J3 • Win-Back (Reactivación):</strong> Churn detectado en base → Flujo de 3 emails segmentados con oferta exclusiva por tiempo limitado.</li>
+                        <li><strong>J4 & J5 • Pipeline de Anunciantes:</strong> Captura vía web → Envío automático de Media Kit → Propuesta comercial → Alerta de renovación proactiva 60 días antes del vencimiento.</li>
+                    </ul>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                    <h4 class="font-bold text-slate-900 mb-3 text-base border-b border-slate-100 pb-2">🤖 Roadmap Evolutivo de Chatbots</h4>
+                    <div class="space-y-3 text-xs">
+                        <div class="p-3 bg-blue-50 rounded-lg text-blue-900">
+                            <strong>Fase 1 — ManyChat (Instagram Stories & Reels):</strong> Presupuesto estimado de ~$45 USD/mes. Disparador por comentarios o DM directo → Cualificación automatizada de intención (Suscripción / Pauta / Postulación) e inyección en pipelines HubSpot. Estiman de 50-80 leads/mes con conversión del 12% al 20%.
+                        </div>
+                        <div class="p-3 bg-emerald-50 rounded-lg text-emerald-900">
+                            <strong>Fase 2 — WhatsApp Business API:</strong> Traspaso sistemático de leads cualificados "warm" provenientes de redes sociales. Personalización por segmento para cierres y recordatorios automáticos de renovación asistidos por enlaces de pasarela directa de pagos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                <div class="p-6 border-b border-slate-200"><h3 class="font-bold text-slate-900">🛠️ Tech Stack de Producción y Automatización H2 2026</h3></div>
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-slate-50 text-slate-600 text-xs font-semibold uppercase">
+                        <tr>
+                            <th class="p-4">Herramienta</th>
+                            <th class="p-4">Área de Impacto</th>
+                            <th class="p-4">Caso de Uso Específico en Gamma</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-slate-700 text-xs">
+                        <tr>
+                            <td class="p-4 font-bold">ManyChat</td>
+                            <td class="p-4 text-blue-600 font-medium">Automatización de DMs</td>
+                            <td class="p-4">Captura inicial de leads calificados desde Instagram y enrutamiento hacia HubSpot Journeys.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">Gemini Pro</td>
+                            <td class="p-4 text-purple-600 font-medium">IA Editorial & SEO</td>
+                            <td class="p-4">Aceleración de producción (x3), generación de briefs de contenido SEO, guiones para cápsulas y copys de newsletters semanales.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">Higgsfield AI</td>
+                            <td class="p-4 text-emerald-600 font-medium">Generación de Video de Alta Eficiencia</td>
+                            <td class="p-4">Animación automática de fotos del archivo editorial existente para Reels y recorridos virtuales de YouTube a costo marginal cero.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">HubSpot CRM</td>
+                            <td class="p-4 text-amber-600 font-medium">Núcleo Operativo</td>
+                            <td class="p-4">Gestión completa del ciclo de vida del suscriptor, pipelines comerciales B2B y automatizaciones de alertas de riesgo de churn.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-slate-900 mb-4">🏁 Plan de Trabajo de Próximos Pasos (Next Steps)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-xs">
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm relative">
+                        <span class="absolute top-3 right-3 text-slate-300 font-black text-xl">F1</span>
+                        <h5 class="font-bold text-slate-900 mb-2 uppercase tracking-wider text-blue-600">Fase 1: Bases</h5>
+                        <p class="text-slate-600 leading-relaxed">Corrección prioritaria de la landing de suscripción. Validación de combos híbridos y armado del nuevo Media Kit digital. Setup básico de ManyChat y pipelines en HubSpot.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm relative">
+                        <span class="absolute top-3 right-3 text-slate-300 font-black text-xl">F2</span>
+                        <h5 class="font-bold text-slate-900 mb-2 uppercase tracking-wider text-purple-600">Fase 2: Activación</h5>
+                        <p class="text-slate-600 leading-relaxed">Lanzamiento del episodio 1 del Podcast. Salida en vivo de las 4 series permanentes de cápsulas de video. Activación oficial de la pauta y pilar LinkedIn B2B.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm relative">
+                        <span class="absolute top-3 right-3 text-slate-300 font-black text-xl">F3</span>
+                        <h5 class="font-bold text-slate-900 mb-2 uppercase tracking-wider text-emerald-600">Fase 3: Aceleración</h5>
+                        <p class="text-slate-600 leading-relaxed">Optimización continua mediante reportes SEO mensuales. Ejecución del primer evento Connect & Collab. Piloto activo de chatbot en WhatsApp Business.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm relative">
+                        <span class="absolute top-3 right-3 text-slate-300 font-black text-xl">F4</span>
+                        <h5 class="font-bold text-slate-900 mb-2 uppercase tracking-wider text-slate-900">Fase 4: Consolidación</h5>
+                        <p class="text-slate-600 leading-relaxed">Cierre preventivo de contratos anuales de pauta para H1 2027. Análisis avanzado de cohortes de LTV y entrega de informe financiero con proyecciones anuales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-xs mt-20 border-t border-slate-800">
+        <p>© 2026 Ediciones Gamma. Documento y diseño confidencial de uso estratégico interno.</p>
+    </footer>
+
+    <script>
+        function switchTab(tabId) {
+            // Ocultar todos los contenidos
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            // Remover estilos activos de los botones
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('border-blue-600', 'text-blue-600');
+                btn.classList.add('border-transparent', 'text-slate-500');
+            });
+            
+            // Activar pestaña seleccionada
+            document.getElementById('content-' + tabId).classList.add('active');
+            document.getElementById('tab-' + tabId).classList.add('border-blue-600', 'text-blue-600');
+            document.getElementById('tab-' + tabId).classList.remove('border-transparent', 'text-slate-500');
+        }
+    </script>
+</body>
+</html>
